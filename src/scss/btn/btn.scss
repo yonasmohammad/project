@@ -1,0 +1,116 @@
+$global_color: #fff;
+//for focus btn
+$DarkBrown: #292321;
+$Orange: #CC3300;
+$btn-name: ('thedark', 'thedark-sm', 'thedark-lg');
+$padding: 1,0.25rem 0.5rem, 0.75rem 1.5rem;
+$fontsize:(1,0.875rem,1.25rem);
+$border-radius: 1,0.2rem, 0.3rem;
+//for btn color
+$btn-dark: ('thedark', 'thedark_light', 'nice', 'nice_light', 'wow', 'wow_light', 'angry', 'angry_light', 'sexy', 'sexy_light', 'happy', 'happy_light');
+$background-colors-list: #212121 #2E2E2E #0099CC #33b5e5 #007E33 #00C851 #CC0000 #ff4444 #9933CC #aa66CC #00695c #2BBBAD;
+$colors-list: $global_color;
+
+.thedark{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+//for button shadow
+$btn-shadow: ('btn_happy_shadow', 'btn_angry_shadow', 'btn_wow_shadow', 'btn_nice_shadow', 'btn_sexy_shadow', 'btn_dark_shadow');
+$background-colors-shadow: #19a68a #CC0000 #007E33 #0099CC #9933CC #212121;
+$webkit_color: (rgba(3,255,171,1),rgba(255,68,68,1),rgba(0,200,81,1),rgba(51,181,229,1),rgba(170,102,204,1),rgba(46,46,46,1));
+
+@for $i from 1 through length($btn-shadow) {
+    .#{unquote(nth($btn-shadow, $i)) } {
+      
+       @if ($i>0){
+         background-color: nth($background-colors-shadow, $i);
+        color: $colors-list; 
+         &:focus, 
+         &:hover {
+        outline: 0; 
+      }
+      @if($i>0){
+        &:active{
+          transition: opacity 0.3s ease-in-out;
+          transform: translateY(4px);
+          outline: 0;
+          -webkit-box-shadow: -1px 8px 15px 0px  nth($webkit_color,$i);
+          -moz-box-shadow: -1px 8px 15px 0px  nth($webkit_color,$i);
+          box-shadow: -1px 8px 15px 0px  nth($webkit_color,$i);
+        }
+      }
+      
+    }
+  }
+}
+
+//for button trans
+$btn-trans: ('btn_sexy_trans', 'btn_wow_trans', 'btn_happy_trans', 'btn_nice_trans', 'btn_angry_trans', 'btn_dark_trans');
+$background-colors-trans: #9933CC #007E33 #19a68a #0099CC #CC0000 #212121;
+
+@for $i from 1 through length($btn-trans) {
+    .#{unquote(nth($btn-trans, $i)) } {
+      
+       @if ($i>0){
+            border:1px solid #1abc9c;
+            background:  nth($background-colors-trans,$i);
+            opacity: 0.4; 
+            border-radius: 2% 50%;
+            transition:  1s;
+            transition-timing: ease-in-out;
+            width: 40px;
+            color: $global_color;
+            margin-right: 60px;
+            border-right:1px solid transparent;
+            
+         &:hover {
+        transform: translate(10px);
+        opacity: 0.8; 
+      }
+    }
+  }
+}
+
+
+//for focus btn
+@for $i from 1 through length($btn-name) {
+    .#{unquote(nth($btn-name, $i)) } {
+      @if ($i>1){
+        padding: nth($padding, $i);
+        font-size: nth($fontsize, $i);
+        border-radius: nth($border-radius, $i);
+      }
+      @else{
+         &:focus, 
+         &:hover {
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.4);
+        outline: 0; 
+      }
+    }
+  }
+}
+//for btn color
+@for $i from 1 through length($btn-dark) {
+    .zon-#{unquote(nth($btn-dark, $i)) } {
+        background-color: nth($background-colors-list, $i);
+        color: $colors-list;  
+}
+}
+
+.color-button{
+  margin-top:26%;
+}
+
+ 

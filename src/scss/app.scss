@@ -1,12 +1,5 @@
+//@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "components/components";
+@import "pages/pages";
 @import "bourbon/bourbon";
-
-p{
-  color:red;
-}
-
-.r{
-    width: 200px;
-    height: 100px;
-    background-color: red;
-    
-}
+@import "btn/btn";

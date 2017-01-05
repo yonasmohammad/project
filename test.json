@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "primary": "#primary",
+    ""
+  }
+  "buttons": {
+    "types": [{
+        "name": "ur"
+      }]
+    }
+  }
+}
