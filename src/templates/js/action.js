@@ -76,7 +76,11 @@ $( "table" ).click(function() {
 });
 
 
-
+$( function() {
+    $( "#slider" ).slider();
+  } );
+  
+  
 $(document).ready(function(){
   $('button').on('click',function(){
     $('button').removeClass("s");
