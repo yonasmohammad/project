@@ -1,14 +1,13 @@
 .separator_image {
   height: 110px;
   border-top-left-radius: 3.5em;
-  box-shadow: inset 10px 10px 80px 10px rgba(42, 68, 68, 0.2); }
+  box-shadow: inset 10px 10px 80px 10px rgba(42, 68, 68, 0.7); }
 
 .separator_down {
-  height: 50px;
-  border-top-left-radius: 4em;
-  border-bottom-right-radius: 3.7em;
-  box-shadow: inset 10px 90px 100px 10px rgba(255, 68, 68, 0.5);
-  margin-top: 20%; }
+  height: 110px;
+  border-bottom-right-radius: 3.5em;
+  box-shadow: inset 10px 10px 80px 10px rgba(42, 68, 68, 0.7);
+  margin-top: 11%; }
 
 .img-circle {
   width: 130px;
@@ -25,6 +24,28 @@
   margin-left: auto;
   margin-right: auto; }
 
+#picker, #pickertext, #pickerShadow, #pickerBorder, #pickerBordertext {
+  height: 60px;
+  width: 100px; }
+
+#dar {
+  border-radius: 5%;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1; }
+
+#img2 {
+  background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+  text-shadow: 0 1px #FFF;
+  margin: 0 -5px;
+  padding: 0 20px; }
+
+.table_dark {
+  box-shadow: inset 0 0 1em gold, 0 0 1em #33b5e5;
+  border-radius: 10px 0 10px 0; }
+
 .container {
   text-align: center; }
 
@@ -40,6 +61,35 @@
   padding: .5rem 1rem;
   font-size: 1rem;
   border-radius: .25rem; }
+
+.btn-outline-info.simple_button {
+  border-radius: 25px 3px; }
+
+.btn-outline-info:focus, .btn-outline-info:hover {
+  background-color: transparent !important;
+  outline: none !important; }
+
+.btn-outline-info.zigzag_button {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px dotted #ffffff;
+  -webkit-border-radius: 3px 25px;
+  border-radius: 3px 25px;
+  color: rgba(255, 255, 255, 0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); }
 
 .btn_happy_shadow {
   background-color: #19a68a;
@@ -125,14 +175,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_sexy_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .btn_wow_trans {
   border: 1px solid #1abc9c;
@@ -140,14 +191,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_wow_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .btn_happy_trans {
   border: 1px solid #1abc9c;
@@ -155,14 +207,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_happy_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .btn_nice_trans {
   border: 1px solid #1abc9c;
@@ -170,14 +223,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_nice_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .btn_angry_trans {
   border: 1px solid #1abc9c;
@@ -185,14 +239,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_angry_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .btn_dark_trans {
   border: 1px solid #1abc9c;
@@ -200,14 +255,15 @@
   opacity: 0.4;
   border-radius: 2% 50%;
   transition: 1s;
-  transition-timing: ease-in-out;
   width: 40px;
   color: #fff;
   margin-right: 60px;
   border-right: 1px solid transparent; }
   .btn_dark_trans:hover {
     transform: translate(10px);
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 30%;
+    border-radius: 2%; }
 
 .thedark:focus, .thedark:hover {
   text-decoration: none;
@@ -271,6 +327,3 @@
 .zon-happy_light {
   background-color: #2BBBAD;
   color: #fff; }
-
-.color-button {
-  margin-top: 26%; }

@@ -37,107 +37,164 @@
     
     <div class="col-md-12" style=" background: #466368;background: radial-gradient(#648880, #293f50);color:#fff;">
       <div class="col-md-6">
-        <div class="col-md-9">
-          <h1>custom color</h1>
-            <h5>button</h5>
-            <button type="button" class= "thedark zon-nice_light " data-huebee  id="target" >normal btn</button>&nbsp;&nbsp;
-            <button type="button" class= "thedark btn_happy_shadow custom2 " data-huebee >shadow btn</button>&nbsp;&nbsp;
-            <button type="button" class= "thedark btn_nice_trans custom3 " data-huebee  id="other">curve btn</button>&nbsp;&nbsp;
-            <hr>
-            <button type="button" class= "thedark zon-nice_light set-bg-elem" id="target" >button</button>
-            <button type="button" class= "thedark btn_happy_shadow custom2 set-bg-elem"  id="target">buttpn</button>
-            <button type="button" class= "thedark btn_nice_trans custom3 set-bg-elem" id="other">buttpn</button>
-            
-            
-            
-
-        </div>
-          <!-- add class to anchor to set background-color of anchor as well -->
         <div class="col-md-3">
-          <input class="color-button form-control" value="choose color" />
-        </div>
+          <div class="controls"><a class="up">up</a> | <a class="down">down</a></div>
+           background
+      <input type="color" class="btn btn-info" id="picker" placeholder=""> <br>
+        text<br>
+        <input type="color" class="btn btn-info" id="pickertext" placeholder=""> <br>
+         shadow<br>
+        <input type="color" class="btn btn-info" id="pickerShadow" placeholder=""><br><br><br> 
+        pickerBackground
+        <input type="color" class="btn btn-info" id="pickerBorder" placeholder=""> 
+        pickerBordertext
+        <input type="color" class="btn btn-info" id="pickerBordertext" placeholder=""> 
     </div>
-       <!-- <img class="bg" src="src/images/ako.jpg"> -->
-        <div class="overlay">
-            <div class="row">
-              <b class="b">normal button</b>
-              <div class="containers" style="margin-left: 3%;">
-                <div class="col-md-6">
-              {% macro btn(class,name,class2,name2,class3,name3,class4,name4) -%}
-                    <div class="rows">
-                    <button type="button" class= "thedark {{class}} thedark-lg">{{name}}</button><br><br>
-                    <button type="button" class= "thedark {{class2}}">{{name2}}</button>
-                    <button type="button" class= "thedark {{class3}}">{{name3}}</button>
-                    <button type="button" class= "thedark {{class4}} thedark-sm">{{name4}}</button><br><br>
-                    </div>
-                  {%- endmacro %}
-                  {{btn("zon-nice_light","nice_light thedark-lg","zon-nice","nice","zon-nice_light","nice_light","zon-nice_light","nice_light thedark-sm")}}
-                  {{btn("zon-wow_light","wow_light thedark-lg","zon-wow","wow","zon-wow_light","wow_light","zon-wow_light","wow_light thedark-sm")}}
-                  {{btn("zon-angry_light","angry_light thedark-lg","zon-angry","angry","zon-angry_light","angry_light","zon-angry_light","angry_light thedark-sm")}}
-                  {{btn("zon-sexy_light","sexy_light thedark-lg","zon-sexy","nice","zon-sexy_light","sexy_light","zon-sexy_light","sexy_light thedark-sm")}}
-                  {{btn("zon-happy_light","happy_light thedark-lg","zon-happy","happy","zon-happy_light","happy_light","zon-happy_light","happy_light thedark-sm")}}
-                  {{btn("zon-thedark_light","thedark_light thedark-lg","zon-thedark","nice","zon-thedark_light","thedark_light","zon-thedark_light","thedark_light thedark-sm")}}
-                  {{btn("thedark","normal","thedark","normal","thedark","normal","thedark","normal")}}
-                  <br><br>
-                  <hr>
-                  button effect<br>
-                  {% macro btneffect(className,btn_name) -%}
-                    <button type="button" class= "thedark {{className}}">{{btn_name}}</button>
-                  {%- endmacro %}
-                  {{btneffect("btn_happy_shadow","button")}}  
-                  {{btneffect("btn_angry_shadow","button")}}
-                  {{btneffect("btn_wow_shadow","button")}}
-                  {{btneffect("btn_nice_shadow","button")}}
-                  {{btneffect("btn_angry_shadow","button")}}
-                  {{btneffect("btn_wow_shadow","button")}}
-                  {{btneffect("btn_sexy_shadow","button")}}
-                  {{btneffect("btn_dark_shadow","button")}}<br><br>
-                  {{btneffect("btn_sexy_trans","button")}}
-                  {{btneffect("btn_wow_trans","button")}}
-                  {{btneffect("btn_nice_trans","button")}}
-                  {{btneffect("btn_angry_trans","button")}}
-                  {{btneffect("btn_happy_trans","button")}}
-                  {{btneffect("btn_dark_trans","button")}}<br><br>
-        
-               </div>
-                <div class="col-md-12">
-                  <h3>Card sample</h3>
-                  <div class="container">
-                  <div class="card-deck-wrapper" style="color:#000;">
-                      <div class="card-deck">
-                        <div class="card">
-                        
-                            <img class="card-img-top img-fluid" src="src/images/cute.jpg" alt="Card image cap">
-                            <img class="img-circle " src="src/images/cute.jpg" alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                        <div class="card card-outline-info " id="curve_card">
-                            <div class="separator_image"></div>
-                             <img class="img-circle " src="src/images/cute.jpg" alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                          </div>
-                          <div class="separator_down"></div>
-                        </div>
-                        
-                        <div class="card">
-                            <img class="card-img-top img-fluid" src="src/images/cute.jpg" alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-               </div>
-            </div>
+      <!-- add class to anchor to set background-color of anchor as well -->
+    <div class="col-md-9">
+       <h1>custom color</h1>
+            <h5>button</h5>
+            <button type="button" class= "thedark zon-nice_light " id="c" data-huebee >normal btn</button>&nbsp;&nbsp;
+            <button type="button" class= "thedark zon-nice_light" >button</button>
+            <button type="button" class= "btn btn-outline-info simple_button" >button</button>
+            <button type="button" class= "btn btn-outline-info zigzag_button" >button</button>
+            <hr>
+             <h5>button effect</h5>
+            <button type="button" class= "thedark btn_happy_shadow">buttpn</button>
+            <button type="button" class= "thedark btn_nice_trans" >buttpn</button><br><br><br><br>
+            
+              <h5>Table</h5>
+            <table class="table table_dark">
+              <thead class="thead-default">
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+              </tbody>
+            </table>
+              <h5>normal table bootraps</h5>
+              <table class="table">
+              <thead class="thead-default">
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+     </div>
+     <div class="col-md-6">
+      <div class="card card-outline-info text-xs-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+              <p id="result">copy paste here ...code generate</p>
+            </blockquote>
+          </div>
         </div>
       </div>
-    </div>
+       <!-- <img class="bg" src="src/images/ako.jpg"> -->
+      <div class="containers" style="margin-left: 3%;">
+        <div class="col-md-12">
+          <h3>Card sample</h3>
+            <div class="container">
+              <div class="card-deck-wrapper" style="color:#000;">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top img-fluid" src="src/images/cute.jpg" alt="Card image cap">
+                    <img class="img-circle " src="src/images/cute.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="card card-outline-info " id="curve_card">
+                    <div class="separator_image"></div>
+                     <img class="img-circle " src="src/images/cute.jpg" alt="Card image cap">
+                      <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    <div class="separator_down"></div>
+                  </div>
+                  <div class="card card-outline-info" id="dar">
+                    <img class="card-img-top img-fluid " id="img2" src="src/images/cute.jpg" alt="Card image cap">
+                      <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-md-12">
+            button effect<br>
+            {% macro btneffect(className,btn_name) -%}
+              <button type="button" class= "thedark {{className}}">{{btn_name}}</button>
+            {%- endmacro %}
+             {{btneffect("btn_sexy_trans","button")}}
+            {{btneffect("btn_wow_trans","button")}}
+            {{btneffect("btn_nice_trans","button")}}
+            {{btneffect("btn_angry_trans","button")}}
+            {{btneffect("btn_happy_trans","button")}}
+            {{btneffect("btn_dark_trans","button")}}<br><br>
+            {{btneffect("btn_happy_shadow","button")}}  
+            {{btneffect("btn_angry_shadow","button")}}
+            {{btneffect("btn_wow_shadow","button")}}
+            {{btneffect("btn_nice_shadow","button")}}
+            {{btneffect("btn_angry_shadow","button")}}
+            {{btneffect("btn_wow_shadow","button")}}
+            {{btneffect("btn_sexy_shadow","button")}}
+            {{btneffect("btn_dark_shadow","button")}}<br><br>
+            <hr>
+            <b class="b">normal button</b>
+        {% macro btn(class,name,class2,name2,class3,name3,class4,name4) -%}
+              <div class="rows">
+              <button type="button" class= "thedark {{class}} thedark-lg">{{name}}</button>
+              <button type="button" class= "thedark {{class2}}">{{name2}}</button>
+              <button type="button" class= "thedark {{class3}}">{{name3}}</button>
+              <button type="button" class= "thedark {{class4}} thedark-sm">{{name4}}</button>
+              </div>
+            {%- endmacro %}
+            {{btn("zon-nice_light","nice_light thedark-lg","zon-nice","nice","zon-nice_light","nice_light","zon-nice_light","nice_light thedark-sm")}}<br>
+            {{btn("zon-wow_light","wow_light thedark-lg","zon-wow","wow","zon-wow_light","wow_light","zon-wow_light","wow_light thedark-sm")}}<br>
+            {{btn("zon-angry_light","angry_light thedark-lg","zon-angry","angry","zon-angry_light","angry_light","zon-angry_light","angry_light thedark-sm")}}<br>
+            {{btn("zon-sexy_light","sexy_light thedark-lg","zon-sexy","nice","zon-sexy_light","sexy_light","zon-sexy_light","sexy_light thedark-sm")}}<br>
+            {{btn("zon-happy_light","happy_light thedark-lg","zon-happy","happy","zon-happy_light","happy_light","zon-happy_light","happy_light thedark-sm")}}<br>
+            {{btn("zon-thedark_light","thedark_light thedark-lg","zon-thedark","nice","zon-thedark_light","thedark_light","zon-thedark_light","thedark_light thedark-sm")}}<br>
+            {{btn("thedark","normal","thedark","normal","thedark","normal","thedark","normal")}}<br>
+            <br><br>
+         </div>
+  </div>
+
+   
 
       <!-- <div class="divider" style="background:#000;" ></div>
       <section class="bg-2">
