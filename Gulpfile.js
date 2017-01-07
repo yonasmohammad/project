@@ -42,10 +42,14 @@ gulp.task('scss', function() {
 gulp.task('sass:watch', function () {
   gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], ['sass']);
 });
+gulp.task('nunjucks:watch', function () {
+   gulp.watch(['src/templates/*.html', 'src/templates/**/*.html'], ['nunjucks']);
+    gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], ['sass']);
+});
 
 gulp.task('gulp:watch', function () {
   gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], ['sass']);
-  gulp.watch(['src/templates/*.html', 'src/templates/**/*.html'], ['nunjucks']);
+ 
 });
 
 

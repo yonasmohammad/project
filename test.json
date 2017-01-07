@@ -1,12 +1,8 @@
-{
-  "colors": {
-    "primary": "#primary",
-    ""
-  }
-  "buttons": {
-    "types": [{
-        "name": "ur"
-      }]
-    }
-  }
-}
+[
+
+	{
+	  
+	  "width", "height", "color", "background-color",  "border-radius", "opacity", "border" ,"transition", "margin-right",  "border-right", "transform","box-shadow"
+	}
+]
+

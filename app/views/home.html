@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/huebee@1/dist/huebee.min.css">
   <link class="localLinks" href="app/assets/css/app.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Kumar+One|Indie+Flower|Caveat|Permanent+Marker|Rock+Salt">
   <link class="localLinks" href="app/assets/css/bootstrap.min.css" rel="stylesheet">
 
   
@@ -50,30 +50,69 @@
       <div class="col-md-6">
         <div class="col-md-3">
           <div class="controls"><a class="up">up</a> | <a class="down">down</a></div>
-          <div id="slider"></div>
-           background
-      <input type="color" class="btn btn-info" id="picker" placeholder=""> <br>
-        text<br>
-        <input type="color" class="btn btn-info" id="pickertext" placeholder=""> <br>
-         shadow<br>
-        <input type="color" class="btn btn-info" id="pickerShadow" placeholder=""><br><br><br> 
-        pickerBackground
-        <input type="color" class="btn btn-info" id="pickerBorder" placeholder=""> 
-        pickerBordertext
-        <input type="color" class="btn btn-info" id="pickerBordertext" placeholder=""> 
+          
+              border
+              <div class="slideq" id="slider5"></div>
+              border-top-left-radius 
+              <div class="slideq" id="slider6"></div>
+              border-top-right-radius
+              <div class="slideq" id="slider7"></div>
+              border-bottom-left-radius
+              <div class="slideq" id="slider8"></div>
+              border-bottom-left-radius
+              <div class="slideq" id="slider9"></div>
+              
+              font size 
+              <div class="slideq" id="slider"></div>
+              font weight 
+              <div class="slideq" id="slider3"></div> 
+              
+              <select class="selectpicker form-control slideq" id="fs">
+                 <option value="Arial">Arial</option>
+                  <option value="Verdana ">Verdana </option>
+                  <option value="Impact ">Impact </option>
+                  <option value="Comic Sans MS">Comic Sans MS</option>
+                  <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                  <option value="Tahoma ">Tahoma </option>
+                  <option value="" disabled>google font</option>
+                  <option value="Tangerine">Tangerine</option>
+                  <option value="Kumar One">Kumar One</option>
+                  <option value="Indie Flower">Indie Flower </option>
+                  <option value="Caveat">Caveat </option>
+                  <option value="Permanent Marker">Permanent Marker</option>
+                  <option value="Rock Salt">Rock Salt</option>
+                  
+              </select>
+
+              background
+              <input type="color" class="btn btn-info slideq" id="picker" placeholder=""> <br>
+              text<br>
+              <input type="color" class="btn btn-info slideq" id="pickertext" placeholder=""> <br>
+              shadow<br>
+              <input type="color" class="btn btn-info slideq" id="pickerShadow" placeholder=""><br><br><br> 
+              text-align
+              <div class="tableMove" id="slider4"></div> 
+              table box-shadow
+              <div class="tableMove" id="slider10"></div>
+              pickerBackground
+              <input type="color" class="btn btn-info tablechange" id="pickerBorder" placeholder=""> 
+              pickerBordertext
+        <input type="color" class="btn btn-info tablechange" id="pickerBordertext" placeholder=""> 
     </div>
       <!-- add class to anchor to set background-color of anchor as well -->
     <div class="col-md-9">
        <h1>custom color</h1>
             <h5>button</h5>
-            <button type="button" class= "thedark zon-nice_light " id="c" data-huebee >normal btn</button>&nbsp;&nbsp;
+            <button type="button" class= "thedark zon-nice_light" id="font_size" data-huebee >normal btn</button>&nbsp;&nbsp;
             <button type="button" class= "thedark zon-nice_light" >button</button>
             <button type="button" class= "btn btn-outline-info simple_button" >button</button>
-            <button type="button" class= "btn btn-outline-info zigzag_button" >button</button>
             <hr>
              <h5>button effect</h5>
             <button type="button" class= "thedark btn_happy_shadow">buttpn</button>
+            <button type="button" class= "btn btn-outline-info zigzag_button" >button</button>
             <button type="button" class= "thedark btn_nice_trans" >buttpn</button><br><br><br><br>
+            
+            
             
               <h5>Table</h5>
             <table class="table table_dark">
@@ -122,7 +161,7 @@
         </div>
      </div>
      <div class="col-md-6">
-      <div class="card card-outline-info text-xs-center">
+      <div class="card card-outline-info text-xs-left">
         <div class="card-block">
             <blockquote class="card-blockquote">
               <p id="result">copy paste here ...code generate</p>
@@ -332,7 +371,8 @@
       <!--  </div>-->
       <!--</div>-->
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
  <script class="localJSAssets" src="app/assets/js/tether.js"></script>
  <script src="https://unpkg.com/huebee@1/dist/huebee.pkgd.min.js"></script>
