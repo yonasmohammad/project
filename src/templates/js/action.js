@@ -241,7 +241,24 @@ $("#fs").change(function() {
 
 
 
+$(document).ready(function () {
+    addElements();
+    $(function () {
+        $("#list2, #list1").sortable({
+            connectWith: ".card",
+            cursor: "move"
+        }).disableSelection();
+    });
 
+
+});
+
+function addElements() {
+    $("#list1").empty().append(
+        " <button type='button' id='item1' class= 'thedark zon-nice_light '>button</button>" +
+        "<li id='item2' class='list1Items'>Item 2</li>" +
+        "<li id='item3' class='list1Items'>Item 3</li>");
+}
 
 
 

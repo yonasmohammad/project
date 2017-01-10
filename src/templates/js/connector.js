@@ -1,13 +1,11 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
- <script class="localJSAssets" src="app/assets/js/tether.js"></script>
- <script src="https://unpkg.com/huebee@1/dist/huebee.pkgd.min.js"></script>
-
-
- <script class="localJSAssets" src="app/assets/js/paralex.js"></script>
- <script class="localJSAssets" src="app/assets/js/bootstrap.min.js"></script>
- <script class="localJSAssets" src="Gulpfile.js"></script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script class="localJSAssets" src="app/assets/js/tether.js"></script>
+<script src="https://unpkg.com/huebee@1/dist/huebee.pkgd.min.js"></script>
+<script class="localJSAssets" src="app/assets/js/paralex.js"></script>
+<script class="localJSAssets" src="app/assets/js/bootstrap.min.js"></script>
+<script class="localJSAssets" src="Gulpfile.js"></script>
  <script class="localJSAssets" src="app/assets/js/action.js"></script>
      <script>
       var directoryName = 'project/'.toLowerCase();

@@ -1,24 +1,19 @@
 
-
 $( ".table" ).on('click',function() {
     $(".table").removeClass('me-table');
     $(this).addClass('me-table')
 });
 
-
-
-
 $( "button" ).on('click',function() {
     $("button").removeClass('edit-me');
     $(this).addClass('edit-me')
-    
     var html = [ "this are  the following styles:" ];
     var styleProps = $( '.edit-me' ).css(["font-family","font-weight","font-size", "width", "height", "color","margin", "border",  "border-radius",
                                    "background-color", "opacity","transition","transform","box-shadow","-webkit-box-shadow","-moz-box-shadow"
                                     ]);
     $.each( styleProps, function( prop, value ) {
     html.push( prop + ": " + value + ";");
-  });
+    });
  
   $( "#result" ).html( html.join( "<br>" ) );
   
@@ -246,7 +241,24 @@ $("#fs").change(function() {
 
 
 
+$(document).ready(function () {
+    addElements();
+    $(function () {
+        $("#list2, #list1").sortable({
+            connectWith: ".card",
+            cursor: "move"
+        }).disableSelection();
+    });
 
+
+});
+
+function addElements() {
+    $("#list1").empty().append(
+        " <button type='button' id='item1' class= 'thedark zon-nice_light '>button</button>" +
+        "<li id='item2' class='list1Items'>Item 2</li>" +
+        "<li id='item3' class='list1Items'>Item 3</li>");
+}
 
 
 
